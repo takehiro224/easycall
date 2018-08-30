@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2F05F56B21353B340067F6C5 /* MemberCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F05F56A21353B340067F6C5 /* MemberCollectionViewCell.swift */; };
+		2F05F56F213694AE0067F6C5 /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F05F56E213694AE0067F6C5 /* CallViewController.swift */; };
+		2F05F571213694B90067F6C5 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F05F570213694B90067F6C5 /* EditViewController.swift */; };
 		2F7024C321352E4A000DF642 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7024C221352E4A000DF642 /* AppDelegate.swift */; };
 		2F7024C521352E4A000DF642 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7024C421352E4A000DF642 /* ViewController.swift */; };
 		2F7024C821352E4A000DF642 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F7024C621352E4A000DF642 /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		2F05F56A21353B340067F6C5 /* MemberCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberCollectionViewCell.swift; sourceTree = "<group>"; };
+		2F05F56E213694AE0067F6C5 /* CallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
+		2F05F570213694B90067F6C5 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		2F7024BF21352E4A000DF642 /* easycall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = easycall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F7024C221352E4A000DF642 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F7024C421352E4A000DF642 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				2F05F569213538BC0067F6C5 /* Main */,
+				2F05F56C213694760067F6C5 /* Call */,
+				2F05F56D213694820067F6C5 /* Edit */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -106,6 +112,22 @@
 				2F05F56A21353B340067F6C5 /* MemberCollectionViewCell.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		2F05F56C213694760067F6C5 /* Call */ = {
+			isa = PBXGroup;
+			children = (
+				2F05F56E213694AE0067F6C5 /* CallViewController.swift */,
+			);
+			path = Call;
+			sourceTree = "<group>";
+		};
+		2F05F56D213694820067F6C5 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				2F05F570213694B90067F6C5 /* EditViewController.swift */,
+			);
+			path = Edit;
 			sourceTree = "<group>";
 		};
 		2F7024B621352E4A000DF642 = {
@@ -291,8 +313,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F05F571213694B90067F6C5 /* EditViewController.swift in Sources */,
 				2F05F56B21353B340067F6C5 /* MemberCollectionViewCell.swift in Sources */,
 				2F7024C521352E4A000DF642 /* ViewController.swift in Sources */,
+				2F05F56F213694AE0067F6C5 /* CallViewController.swift in Sources */,
 				2F7024C321352E4A000DF642 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

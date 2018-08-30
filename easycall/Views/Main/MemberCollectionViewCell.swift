@@ -14,6 +14,4 @@ class MemberCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var memberImageView: UIImageView!
     @IBOutlet weak var memberName: UILabel!
     
-    
-    
 }

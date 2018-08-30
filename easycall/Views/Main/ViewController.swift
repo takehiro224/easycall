@@ -21,7 +21,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
+    @IBAction func funcButtonTapped(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "main->edit", sender: nil)
+    }
+    
 }
 
 //
@@ -35,15 +39,28 @@ extension ViewController: UICollectionViewDataSource {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "memberCell", for: indexPath) as? MemberCollectionViewCell else {
             return UICollectionViewCell()
         }
+        
+        cell.isSelected = true
         cell.memberName.text = "永江ユウキ\(indexPath.row)"
+        cell.memberImageView.layer.cornerRadius = cell.memberImageView.frame.height / 2
+        cell.memberView.layer.cornerRadius = 10
         return cell
     }
-
     
 }
 
 extension ViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("tap \(indexPath.row)")
+        self.performSegue(withIdentifier: "main->call", sender: nil)
     }
+}
+
+extension ViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 320, height: 96)
+    }
+    
 }
